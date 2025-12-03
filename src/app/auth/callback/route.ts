@@ -25,5 +25,14 @@ export async function GET(request: Request) {
     }
 
     // return the user to an error page with instructions
-    return NextResponse.redirect(`${origin}/auth/auth-code-error`)
+    const forwardedHost = request.headers.get('x-forwarded-host')
+    const isLocalEnv = process.env.NODE_ENV === 'development'
+
+    if (isLocalEnv) {
+        return NextResponse.redirect(`${origin}/auth/auth-code-error`)
+    } else if (forwardedHost) {
+        return NextResponse.redirect(`https://${forwardedHost}/auth/auth-code-error`)
+    } else {
+        return NextResponse.redirect(`${origin}/auth/auth-code-error`)
+    }
 }
