@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BiteBoard - Discover Best Dishes Nearby",
-  description: "AI-powered food discovery. Find the best dishes and drinks at cafes near you, curated by Gemini AI.",
+  description: "AI-powered food discovery. Find the best dishes and drinks at cafes near you, curated by AI.",
   metadataBase: new URL("https://bite-board-v2.vercel.app"),
 };
 
