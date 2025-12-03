@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BiteBoard 🍽️
 
-## Getting Started
+BiteBoard is an intelligent web application that helps you discover the best dishes at cafes near you. Powered by Google's Gemini AI, it analyzes reviews to recommend specific dishes and drinks, ensuring you always know what to order.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **AI-Powered Recommendations**: Uses Google Gemini to analyze cafe reviews and extract the top 3-5 recommended dishes with positive mention counts.
+- **Location-Based Search**: Automatically finds cafes near you or allows manual location search using Google Places API.
+- **Smart Wishlist**: Save your favorite spots to a wishlist.
+- **Collaborative Lists**: Invite friends to join your wishlist and plan your next food adventure together.
+- **Seamless Authentication**: Easy sign-in via email magic links to save and sync your data.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **AI**: [Google Gemini](https://deepmind.google/technologies/gemini/)
+- **Maps & Data**: [Google Places API](https://developers.google.com/maps/documentation/places/web-service/op-overview)
+- **Database & Auth**: [Supabase](https://supabase.com/)
+- **State Management**: [TanStack Query](https://tanstack.com/query/latest)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
